@@ -1,0 +1,129 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pizzaBek</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="madol-field hidden">
+      <div class="madal">
+        <div class="arrow">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="modal-img">
+          <img id="madalImg" />
+        </div>
+        <div class="modal-right">
+          <div class="modal-right__text">
+            <h4 class="modalTitle"></h4>
+            <p class="modalText">
+            </p>
+          </div>
+          <div class="counter">
+            <div class="pitsa-size">
+              <h4>Pitsa kattaligi</h4>
+              <div class="amount">
+                <span class="minus" >
+                  <span>-</span>
+                </span>
+                <div><b class="sanoq">1</b><b>-ta</b></div>
+                <span class="plus">
+                  <span>+</span>
+                </span>
+              </div>
+              <div class="fil-wrapper">
+                <span class="fill filActive">qalin</span>
+                <span class="fill">ingichka</span>
+              </div>
+            </div>
+          </div>
+          <div class="addWrapper-toCard">
+            <h4 class="modal-price">
+              
+            </h4>
+            <button class="addBtn global"><a style="color: white;" href="./savatcha.html"> Savatga qo'shish</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <div class="header-left">
+            <div class="header-logo">
+              <a target="_blank">
+                <img
+                  src="./img/div.header__logo.svg"
+                  alt="logo"
+                  class="headerImg"
+                />
+              </a>
+            </div>
+            <div class="input-div">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                placeholder="Pitsalarni qidirish"
+                id="search"
+                class="global"
+              />
+            </div>
+          </div>
+          <div class="header-btn">
+            <div class="header-price">
+              <span>0</span>
+              <span>UZS</span>
+            </div>
+            <div class="button">
+              <span class="button-Icon">
+                <a href="./savatcha.html" style="color: white;"><i class="fa-solid fa-cart-shopping"></i></a>
+              </span>
+              <span class="products-length"> 0 </span>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <main>
+        <div class="container">
+          <div class="tab">
+            <ul class="tabs">
+              <li class="tabs-item active">Barchasi</li>
+              <li class="tabs-item">Go’shtli</li>
+              <li class="tabs-item">Pishloqli</li>
+              <li class="tabs-item">Qo’ziqorinli</li>
+              <li class="tabs-item">Achchiq</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="cardCover">
+            <div class="cardCover-title">
+              <h1>Barcha pitsalar</h1>
+            </div>
+            <div class="Allcards root"></div>
+            <div class="meatcards root hidden" ></div>
+            <div class="cheaseCards root hidden"></div>
+            <div class="qoziqornliCards root hidden"></div>
+            <div class="spicyCards root hidden"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+
+    
+    <script async defer src="./js/main.js"></script>
+  </body>
+</html>
